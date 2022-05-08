@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=IBM+Plex+Sans+KR:wght@300&family=Lobster&family=Pacifico&family=Patrick+Hand&family=Signika:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.sectOne{
+    background-image: url("../resource/images/avel-chuklanov-DUmFLtMeAbQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+.filter{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(55 56 57 / 41%);
+}
+
+header{
+    background-color: rgb(25 19 19);
+    padding: 0 100px 0 100px;
+    position: fixed;
+    width: 100%;
+    height: 6vh;
+    top: 0;
+    z-index: 2;
+}
+nav{  
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.logo-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+}
+.logo h1{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1rem;
+    transition: linear 0.3s;
+}
+.logo h1:hover{
+    transform: scale(110%,110%);
+}
+ul{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+}
+.navList{
+    list-style: none;
+    margin-right: 60px;
+    transition: linear 0.2s;
+}
+.navList:hover{
+    transform: scale(110%,110%);
+}
+.navList:last-child{
+    margin-right: 0;
+}
+.navLinks{
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+.navLinks:active{
+    color: #a0a0a0;
+}
+.main{
+    background-color: #3b3a3845;
+    width: 40%;
+    border-radius: 0 10px 10px 0;
+    z-index: 1;
+}
+.main-inner{
+    padding: 50px 30px 50px 100px;
+}
+.main h1,.main h1 span,.main p{
+    padding-bottom: 30px;
+}
+.main h1{
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 0.2rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: rgb(250, 250, 250);
+}
+.main h1 span{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0;
+    color: rgb(168 219 232);
+    font-size: 3.7rem;
+    text-transform: uppercase;
+}
+.main p{
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: #eeeeee;
+}
+.main .button{
+    padding: 15px 10px;
+    background-color: black;
+    border-radius: 5px 5px 50% 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.main a{
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    display: inline-block;
+    transition: 0.3s linear;
+}
+.buttonIcon{
+    color: white;
+}
+.main a:hover{
+    transform: scale(106%,106%);
+}
+.main a .buttonIcon{
+    opacity: 0.5;
+    font-size: 1.3rem;
+}
+.main a:hover .buttonIcon{
+    opacity: 1;
+}
+
+/* section 2*/
+
+.sectTwo{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectTwo-main{
+    width: 90%;
+    min-height: 50vh;
+    position: relative;
+}
+.sectTwo-main h1, .sectTwo-main p{
+    text-align: center;
+}
+.sectTwo-main h1{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 2.5rem;  
+    margin-bottom: 1rem;
+}
+.sectTwo-main p{
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2rem;
+}
+.aboutUs-wrapper{
+    width: 100%;
+}
+.sectTwo .card-wrapper{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sectTwo .cards{
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    margin:20px 0;
+}
+.sectTwo .cards img{
+    width: 100%;
+    height: 60%;
+}
+.sectTwo .cards .card-info{
+    width: 100%;
+    height: 40%;
+}
+.sectTwo .cards h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px 0 0 20px;
+}
+.sectTwo .cards p{
+    font-size: 0.96rem;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 20px;
+}
+.sectTwo .director{
+    margin-top: 40px;
+}
+.sectTwo .director span{
+    font-family: 'Signika', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+}
+.sectTwo .director .gif{
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Section 3 */
+
+.sectThree{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+.sectThree-main{
+    width: 100%;
+    min-height: 50vh;
+}
+.sectThree .sectThree-main h1{
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 2rem;  
+    margin:0 0 20px 160px;
+    letter-spacing: 0.1rem;
+}
+.sectThree .course-card-wrapper{
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sectThree .course-card-wrapper .course-cards{
+    width: 350px;
+    min-height: 400px;
+    margin: 10px 30px;
+    background-color: #dddddd;
+    transition: 1s;
+    user-select: none;
+    box-shadow: 0 0 15px 3px rgb(118 114 114 / 71%);
+}
+.sectThree .course-card-wrapper .course-cards:hover{
+    transform: rotateZ(5deg);
+}
+.sectThree .course-card-wrapper .course-cards:nth-child(odd):hover{
+    transform: rotateZ(-5deg);
+}
+.sectThree .course-cards .course-img,
+.sectThree .course-cards .course-info{
+    width: 100%;
+}
+.sectThree .course-cards .course-img{
+    height: 225px;
+}
+.sectThree .course-cards .course-info{
+    background-color: rgba(169, 216, 231, 0.274)
+}
+.sectThree .course-info h1{
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-left: 20px;
+    padding-top: 10px;
+    text-transform: capitalize;
+}
+.sectThree .course-info p{
+    font-family: 'Signika', sans-serif;
+    font-size: 0.96rem;
+    letter-spacing: 0;
+    padding: 0 20px;
+}
+.sectThree .course-button-container{
+    text-align: right;
+    padding: 20px;
+}
+.sectThree .course-button-wrapper{
+    display: inline-block;
+    background-color: #000000;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: linear 0.2s;
+}
+.sectThree .course-button-wrapper:hover{
+    transform: scale(105%,105%);
+    background-color: white;
+    color: #000000;
+}
+.sectThree .course-button-wrapper span{
+    font-family: 'Fredoka One', cursive;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    margin-right: 3px;
+}
+
+/* Section 4 */
+
+.sectFour{
+    background-image: url("../resource/images/corinne-kutz-tMI2_-r5Nfo-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+}
+.filterTwo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008c;
+}
+.sectFour-main{
+    position: relative;
+    z-index: 1;
+    min-height: 60vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.sectFour-main .contact-banner{
+    width: 80%;
+    text-align: center;
+}
+.sectFour-main h1{
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 1rem;  
+    margin-bottom: 10px;
+}
+.sectFour-main p{
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    letter-spacing: 0.1rem;
+}
+.sectFour-main .contact-banner i{
+    font-size: 80px;
+    color: rgb(197, 197, 197);
+    animation-name: contact;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes contact{
+    0%{
+        color: rgb(197, 197, 197);
+    }
+    50%{
+        color: #000000;
+    }
+    100%{
+        color: rgb(197, 197, 197);
+    }
+}
+
+/* footer */
+footer{
+    width: 100%;
+    min-height: 34vh;
+    background-color: #000000;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-wrapper{
+    width: 80%;
+    min-height: 34vh;
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+.block{
+    border: solid 1px;
+    min-height: 100px;
+    background-color: #000000;
+}
+.block1,.block4{
+    width: 30%;
+}
+.block2,.block3{
+    width: 20%;
+}
+.block1 p, .block2 p, .block3 p, .block4 p{
+    color: white;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.05rem;
+}
+.block1 p{
+    font-style: italic;
+}
+.block1,.block2,.block3,.block4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block1-wrapper, .block4-wrapper{
+    width: 100%;
+    padding: 15px;
+}
+.block1-wrapper a{
+    text-decoration: none;
+    color: white;
+}
+.social{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.a-social1:hover{
+    color: #00ACEE;
+}
+.a-social2:hover{
+    color: #4267B2;
+}
+.a-social3:hover{
+    color: #f7583c;
+}
+.a-social4:hover{
+    color:  #c8232c;
+}
+.a-social5:hover{
+    color: #86c9ef;
+}
+.a-social6:hover{
+    color: #006AFF;
+} 
+.block2-wrapper h1, .block3-wrapper h1, .block4-wrapper h1{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+    color: white; 
+}
+.block2-wrapper p{
+    margin: 10px 0;
+}
+.block2-wrapper i{
+    color: white;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.block2-wrapper i span{
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+    margin-left: 10px;
+    text-transform: lowercase;
+}
+.block3-wrapper ul{
+    display: block;
+    background-color: #000000;
+}
+.block3-wrapper a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Signika', sans-serif;
+    font-size: 1.05rem;
+}
+.block3-wrapper a:hover{
+    color: #adadad;
+}
+.block3-wrapper li{
+    list-style: none;
+    margin: 10px 0;
+    background-color: #000000;
+}
+.block4-wrapper h1{
+    text-transform: uppercase;
+}
+.block4 p{
+    margin: 10px 0;
+}
+.block4-wrapper .send-wrapper{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 2px;
+}
+.block4-wrapper input{
+    border: none;
+    background-color: #6b6b6b00;
+    width: 80%;
+    height: 30px;
+    outline: none;
+    font-size: 1rem;
+}
+.block4-wrapper a:hover .send{
+    color: #006AFF;
+} 
+.block4-wrapper .send{
+    font-size: 1.3rem;
+    text-align: center;
+    width: 20%;
+    color: #000000;
+    padding-right: 0;
+}
+.close{
+    min-height: 6vh;
+    background-color: #0e0d0d;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.close-wrapper{
+    width: 90%;
+    color: rgb(99, 99, 99);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.close-wrapper span{
+    font-family: 'Signika', sans-serif;
+    font-size: 1.05rem;
+}
+.close-wrapper span a{
+    text-decoration: none;
+    color: rgb(99, 99, 99);
+    margin: 0 20px
+}
+.close-wrapper span a:hover{
+    color: rgb(165, 165, 165);
+}
+
+
+@media screen and (max-width: 1400px){
+    /* Section 2 */
+    .sectTwo-main{
+        padding-top: 9vh;
+    }
+    .sectTwo-main .director{
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    header{
+        padding: 0 30px 0 30px;
+    }
+    .main{
+        width: 70%;
+    }
+    .main-inner{
+        padding-left: 30px;
+    }
+    ul{
+        background-color: rgb(25 19 19);
+    }
+
+    /* Section 2 */
+    .sectTwo .card-wrapper{
+        margin-top: 1rem;
+    }
+    .sectTwo-main{
+        padding-top: 7vh 0;
+    }
+
+    /* Section 3 */
+
+    .sectThree{
+        align-items: flex-start;
+    }
+    .sectThree-main{
+        margin-top: 8vh;
+    }
+    .sectThree .course-card-wrapper .course-cards:last-child{
+        margin-bottom: 50px;
+    }
+
+    /* Section 4 */
+
+    .block{
+        width: 50%;
+        margin: 30px auto;
+    }
+
+
+@media screen and (max-width: 550px) {
+    header{
+        position: relative;
+        padding: 0;
+        height: 100%;
+    }
+    nav{
+        flex-wrap: wrap;
+        height: 100%;
+        flex-direction: column;
+    }
+    .logo-container, ul{
+        padding: 0;
+        justify-content: center;
+    }
+    .logo-container{
+        padding: 10px 0 10px 0;
+    }
+    .logo h1{
+        letter-spacing: 0.3rem;
+    }
+    ul{
+        display: block;
+        width: 95%;
+    }
+    .navList{
+        width: 100%;
+        text-align: center;
+        padding: 8px 0 8px 0;
+        margin-bottom: 3px;
+        border-radius: 5px;
+        background-color: rgb(162 157 157 / 71%);
+    }
+    .navList:hover{
+        transform: none;
+    }
+    .navList:last-child{
+        margin-bottom: 13px;
+    }
+    .navLinks{
+        font-size: 16px;
+    }
+    .sectOne{
+        align-items: unset;
+    }
+    .main{
+        width: 100%;
+        padding:15% 0 0 0;
+    }
+    .main-inner{
+        padding: 10px;
+    }
+    .main h1, .main p, .button  {
+        padding: 0 0 20px 0;
+    }
+    .main h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .main p{
+        text-align: center;
+        font-size: 1.05rem;
+        letter-spacing: 0.01rem;
+    }
+    .main .buttonWrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .main a{
+        font-size: 0.8rem;
+    }
+    .main a .buttonIcon{
+        font-size: 1rem;
+    }
+
+    /* Section 2 */
+
+    .sectTwo-main{
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+    }
+    .sectTwo-main h1{
+        font-size: 2rem;
+    }
+    .sectTwo-main p{
+        font-size: 1rem;
+    }
+    .sectTwo .card-wrapper{
+        margin-top: 50px;
+    }
+    .sectTwo .cards{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+    .sectTwo .cards:last-child{
+        margin-bottom: 0;
+    }
+    .sectTwo-main .director{
+        margin-top: 50px;
+    }
+
+    /* Section 3 */
+
+    .sectThree-main{
+        margin-top: 2vh;
+    }
+    .sectThree .sectThree-main h1{
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+    
+    /* Section 4 */
+
+    .sectFour-main h1{
+        letter-spacing: 0.5rem;
+        margin-bottom: 15px;
+    }
+    .sectFour-main p{
+        margin-bottom: 15px;
+    }
+    .sectFour-main .contact-banner i{
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+    .footer-wrapper{
+        width: 100%;
+    }
+    .block{
+        width: 100%;
+        margin: 30px auto;
+    }
+    .block1 p{
+        font-size: 1.1rem;
+    }
+    .block1-wrapper{
+        text-align: center;
+    }
+    .block2-wrapper{
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .block3-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .block3-wrapper ul{
+        width: 100%;
+    }
+    .block3-wrapper ul li{
+        margin: 25px 0;
+    }
+}
+    
+
